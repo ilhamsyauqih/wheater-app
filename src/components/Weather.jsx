@@ -10,6 +10,15 @@ import snow_icon from '../assets/snow.png'
 import wind_icon from '../assets/wind.png'
 
 const Weather = () => {
+
+    const search = async () => {
+        try{
+            const url = `https://api.openweathermap.org/data/2.5/weather?q={city name}&appid=${import.meta.env.VITE_APP_ID}`
+        } catch (error) {
+
+        }
+    }
+
     return (
         <div className='weather'>
             <div className="search-bar">
